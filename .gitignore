@@ -1,0 +1,17 @@
+# Dependencias generales
+backend/node_modules/
+frontend/node_modules/
+
+# Build outputs
+dist/
+build/
+
+# Env files
+.env
+.env.local
+backend/.env
+frontend/.env
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
