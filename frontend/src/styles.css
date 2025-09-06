@@ -19,6 +19,8 @@ body{margin:0;background:var(--bg);color:var(--dark);}
 
 .grid{display:grid;grid-template-columns:360px 1fr;gap:20px;align-items:start}
 .card{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,0.05)}
+/* Nuevos estilos Turnos Publico*/
+/* Fin nuevos estilos Turnos Publico*/
 .form-row{display:flex;flex-direction:column;margin-bottom:10px}
 .input, select{padding:10px;border-radius:8px;border:1px solid #e6edf3;font-size:14px}
 .button{padding:10px 14px;border-radius:8px;border:none;background:var(--accent);color:white;cursor:pointer}

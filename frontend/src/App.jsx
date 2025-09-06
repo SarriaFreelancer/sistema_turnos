@@ -5,6 +5,7 @@ import Dashboard from "./components/Dashboard";
 import TVScreen from "./components/TVScreen";
 import AdminPanel from "./components/AdminPanel";
 import { useAuth } from "./context/AuthContext";
+import CreateTurn from "./components/CreateTurn";
 
 export default function App() {
   const { user, logout } = useAuth();
@@ -17,6 +18,7 @@ export default function App() {
         </div>
         <div className="nav-right">
           <Link to="/tv" className="link">TV</Link>
+          <Link to="/Turns" className="link">Turnos</Link>
           <Link to="/admin" className="link">Admin</Link>
           {user ? (
             <>
@@ -34,6 +36,7 @@ export default function App() {
           <Route path="/" element={user ? <Dashboard /> : <div className="hero">Bienvenido — por favor <Link to="/login">inicia sesión</Link> para usar el panel.</div>} />
           <Route path="/login" element={<Login />} />
           <Route path="/tv" element={<TVScreen />} />
+          <Route path="/Turns" element={<CreateTurn />} />
           <Route path="/admin" element={<AdminPanel />} />
         </Routes>
       </main>

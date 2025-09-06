@@ -13,7 +13,7 @@ export default function ModuleControl({ user, onUpdated, currentTurn }) {
         alert(res.message);
       } else {
         const code = `${res.module || user.module}${String(res.number).padStart(3,"0")}`;
-        const texto = `David Sarria, turno ${code}. Por favor diríjase al módulo ${user.module}`;
+        const texto = `Turno ${code}. Por favor diríjase al módulo ${user.module}`;
         const utter = new SpeechSynthesisUtterance(texto);
         speechSynthesis.speak(utter);
       }
