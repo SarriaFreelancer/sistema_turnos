@@ -23,7 +23,7 @@ export default function AdminPanel() {
   }
 
   return (
-    <div className="card" style={{maxWidth:480}}>
+    <div className="card" style={{maxWidth:480  , margin:"20px auto"}}>
       <h3>Admin - Crear usuario módulo</h3>
       <form onSubmit={handleCreateUser} style={{marginTop:12}}>
         <div className="form-row">
