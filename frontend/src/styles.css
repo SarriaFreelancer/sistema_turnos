@@ -29,6 +29,7 @@ body{margin:0;background:var(--bg);color:var(--dark);}
 .module{padding:14px;border-radius:12px;text-align:center}
 .module h3{margin:0}
 .turn-number{font-size:28px;font-weight:800;margin-top:8px}
+.turn-nome{font-size:20px;font-weight:600;margin-top:8px}
 .turn-patient{font-size:14px;color:var(--muted)}
 .tv-grid{display:grid;grid-template-columns:repeat(auto-fit, minmax(180px,1fr));gap:14px}
 .tv-card{background:linear-gradient(180deg,#111827,#0b1220);color:white;padding:18px;border-radius:12px;text-align:center}
