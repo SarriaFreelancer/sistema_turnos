@@ -38,6 +38,7 @@ export default function Dashboard() {
               ? attending.map((t) => (
                   <div key={t._id} className="card module">
                     <div className="small">Módulo {t.module}</div>
+                    <div className="turn-nome">{t.nombre}</div>
                     <div className="turn-number">
                       {`${t.module}${String(t.number).padStart(3, "0")}`}
                     </div>
