@@ -12,7 +12,13 @@ export default function AdminPanel() {
     try {
       const res = await registerRequest({ username, password, module, adminSecret });
       if (res.username) {
-        alert('Usuario creado: ' + res.username + " módulo " + res.module);
+        Swal.fire({
+                  icon: "success",
+                  title: "Usuario creado",
+                  html: `Nombre: <b>${res.username}</b><br>Módulo: <b>${res.module}</b>`,
+                  confirmButtonText: "Aceptar",
+                  timer: 3000
+                });
         setUsername(""); setPassword("");
       } else {
         alert(JSON.stringify(res));
